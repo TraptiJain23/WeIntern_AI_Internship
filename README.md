@@ -76,7 +76,7 @@ Python data libraries.
 ## Repository Structure
 
 ```text
-WeIntern AI Internship/
+WeIntern_AI_Internship/
 │
 ├── Week-1/
 ├── Week-2/
