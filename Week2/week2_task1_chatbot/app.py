@@ -18,9 +18,12 @@ import random
 from rapidfuzz import fuzz
 from datetime import datetime
 
+from pathlib import Path
+BASE_DIR = Path(__file__).parent
+
 
 # Load intents dataset from JSON file
-with open("intents.json", "r") as file:
+with open(BASE_DIR / "intents.json", "r") as file:
     intents = json.load(file)
 
 
