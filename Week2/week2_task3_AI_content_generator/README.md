@@ -72,8 +72,8 @@ week2_task3_AI_content_generator/
 ### 1. Clone the Repository
 
 ```bash
-git clone <repository-url>
-cd AI_Content_Generator
+git clone [<repository-url>](https://github.com/TraptiJain23/WeIntern_AI_Internship)
+cd week2_task3_AI_content_generator
 ```
 
 ### 2. Install Required Dependencies
