@@ -45,20 +45,6 @@ The application provides a simple and interactive interface for creating high-qu
 
 - **JavaScript** – Implements the Copy-to-Clipboard functionality for generated content.
 
----
-
-## 📂 Project Structure
-
-```text
-AI_Content_Generator/
-│
-├── app.py
-├── requirements.txt
-├── README.md
-├── .env.example
-├── .gitignore
-└── screenshots/
-```
 
 ---
 ## Folder Structure
