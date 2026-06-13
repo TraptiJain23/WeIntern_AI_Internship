@@ -1,0 +1,257 @@
+{
+  "intents": [
+    {
+      "tag": "greeting",
+      "patterns": [
+        "hi",
+        "hello",
+        "hey",
+        "good morning",
+        "good evening",
+        "how are you"
+      ],
+      "responses": [
+        "Hello! I'm your Career Guidance Assistant. How can I help you today?"
+      ]
+    },
+
+    {
+      "tag": "goodbye",
+      "patterns": [
+        "bye",
+        "goodbye",
+        "see you",
+        "see you later",
+        "have a nice day",
+        "talk to you later"
+      ],
+      "responses": [
+        "Goodbye! Best wishes for your career journey."
+      ]
+    },
+
+    {
+      "tag": "thanks",
+      "patterns": [
+        "thanks",
+        "thank you",
+        "thanks a lot",
+        "appreciate it",
+        "thank you so much",
+        "great thanks"
+      ],
+      "responses": [
+        "You're welcome! Happy to help."
+      ]
+    },
+
+    {
+      "tag": "career_options",
+      "patterns": [
+        "career options",
+        "career paths",
+        "what career should i choose",
+        "suggest careers",
+        "career guidance",
+        "best careers after graduation"
+      ],
+      "responses": [
+        "Popular career options include Data Analyst, Software Developer, Data Scientist, UI/UX Designer, Cybersecurity Analyst, and Digital Marketer."
+      ]
+    },
+
+    {
+      "tag": "data_analyst",
+      "patterns": [
+        "how to become data analyst",
+        "data analyst roadmap",
+        "career in data analytics",
+        "data analyst guide",
+        "data analyst skills",
+        "learn data analytics"
+      ],
+      "responses": [
+        "To become a Data Analyst, learn Excel, SQL, Python, Statistics, and Power BI/Tableau."
+      ]
+    },
+
+    {
+      "tag": "software_developer",
+      "patterns": [
+        "how to become software developer",
+        "software engineer roadmap",
+        "developer career path",
+        "software development guide",
+        "coding career",
+        "learn software development"
+      ],
+      "responses": [
+        "Start with Python, Java, or C++, then learn DSA, databases, Git, and web development."
+      ]
+    },
+
+    {
+      "tag": "skills_required",
+      "patterns": [
+        "required skills",
+        "what skills are needed",
+        "skills for jobs",
+        "important skills",
+        "technical skills",
+        "career skills"
+      ],
+      "responses": [
+        "Key skills include communication, problem solving, teamwork, adaptability, and technical expertise."
+      ]
+    },
+
+    {
+      "tag": "resume_tips",
+      "patterns": [
+        "resume tips",
+        "how to make resume",
+        "improve my resume",
+        "resume suggestions",
+        "professional resume",
+        "resume help"
+      ],
+      "responses": [
+        "Keep your resume concise and highlight skills, projects, internships, certifications, and achievements."
+      ]
+    },
+
+    {
+      "tag": "interview_preparation",
+      "patterns": [
+        "interview tips",
+        "prepare for interview",
+        "job interview help",
+        "interview preparation",
+        "interview guidance",
+        "crack interview"
+      ],
+      "responses": [
+        "Research the company, revise fundamentals, practice common questions, and be confident while communicating."
+      ]
+    },
+
+    {
+      "tag": "internships",
+      "patterns": [
+        "how to get internship",
+        "internship guidance",
+        "find internships",
+        "internship tips",
+        "apply for internship",
+        "internship opportunities"
+      ],
+      "responses": [
+        "Build projects, maintain a strong LinkedIn profile, and apply consistently on internship platforms."
+      ]
+    },
+
+    {
+      "tag": "certifications",
+      "patterns": [
+        "best certifications",
+        "career certifications",
+        "recommended certifications",
+        "which certification should i do",
+        "certification courses",
+        "industry certifications"
+      ],
+      "responses": [
+        "Popular certifications include Google Data Analytics, IBM Data Science, AWS Cloud Practitioner, and Azure Fundamentals."
+      ]
+    },
+
+    {
+      "tag": "salary_information",
+      "patterns": [
+        "salary information",
+        "average salary",
+        "salary of data analyst",
+        "salary of software developer",
+        "career salary",
+        "expected salary"
+      ],
+      "responses": [
+        "Salary depends on role, skills, experience, and location. Entry-level tech roles generally offer competitive packages."
+      ]
+    },
+
+    {
+      "tag": "linkedin_guidance",
+      "patterns": [
+        "linkedin tips",
+        "linkedin profile",
+        "improve linkedin",
+        "linkedin for jobs",
+        "linkedin guidance",
+        "linkedin optimization"
+      ],
+      "responses": [
+        "Use a professional photo, strong headline, detailed About section, and showcase your projects and skills."
+      ]
+    },
+
+    {
+      "tag": "project_guidance",
+      "patterns": [
+        "project ideas",
+        "project guidance",
+        "career projects",
+        "resume projects",
+        "good projects",
+        "project suggestions"
+      ],
+      "responses": [
+        "Build projects aligned with your target career, such as dashboards, chatbots, recommendation systems, or portfolio websites."
+      ]
+    },
+
+    {
+      "tag": "job_search",
+      "patterns": [
+        "find jobs",
+        "job search tips",
+        "job portals",
+        "where to apply for jobs",
+        "job opportunities",
+        "apply for jobs"
+      ],
+      "responses": [
+        "Use LinkedIn, Indeed, Naukri, Internshala, and company career pages. Tailor your resume for each application."
+      ]
+    },
+    {
+      "tag": "data_scientist",
+      "patterns": [
+        "how to become data scientist",
+        "data scientist roadmap",
+        "career in data science",
+        "data science guide",
+        "data scientist skills",
+        "learn data science"
+      ],
+      "responses": [
+        "To become a Data Scientist, learn Python, Statistics, Machine Learning, SQL, and Data Visualization."
+      ]
+    },
+
+    {
+      "tag": "cybersecurity",
+      "patterns": [
+        "how to become cybersecurity analyst",
+        "cybersecurity roadmap",
+        "career in cybersecurity",
+        "ethical hacking career",
+        "cybersecurity skills",
+        "learn cybersecurity"
+      ],
+      "responses": [
+        "To become a Cybersecurity Analyst, learn Networking, Linux, Security Fundamentals, Ethical Hacking, and Incident Response."
+      ]
+    }
+  ]
+}
