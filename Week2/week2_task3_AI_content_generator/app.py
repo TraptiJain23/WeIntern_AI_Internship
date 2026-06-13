@@ -4,6 +4,7 @@ import google.generativeai as genai
 from dotenv import load_dotenv
 import streamlit.components.v1 as components
 import os
+import json
 
 #Page Configuration
 st.set_page_config(
@@ -167,14 +168,15 @@ if st.session_state.generated_content:
     with col2:
         st.metric("Characters", char_count)
     # copy button
-    copy_text = st.session_state.generated_content.replace("`", "\\`")
 
+    copy_text = json.dumps(st.session_state.generated_content)
+    
     components.html(
         f"""
         <button
             id="copyBtn"
             onclick="
-                navigator.clipboard.writeText(`{copy_text}`);
+                navigator.clipboard.writeText({copy_text});
                 document.getElementById('copyBtn').innerText='✅ Copied!';
                 setTimeout(() => {{
                     document.getElementById('copyBtn').innerText='📋 Copy Content';
@@ -192,7 +194,7 @@ if st.session_state.generated_content:
             📋 Copy Content
         </button>
         """,
-        height=60,
+        height=70,
     )
   
 if regenerate_btn:
