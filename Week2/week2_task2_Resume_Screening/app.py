@@ -83,8 +83,8 @@ if uploaded_files and job_description:
 
         #Final Score        
         final_score = round(
-            (0.3 * skill_score) +
-            (0.7 * similarity_score),
+            (0.2 * skill_score) +
+            (0.8 * similarity_score),
             2
         )
         st.write("### Final Match Score")
