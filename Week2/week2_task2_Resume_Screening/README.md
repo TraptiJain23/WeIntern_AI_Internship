@@ -15,7 +15,7 @@ IDF Vectorization and Cosine Similarity.
 
 The application has been deployed using Streamlit Community Cloud.
 
-Access the deployed application here:  https://resume-screening-ai.streamlit.app
+Access the deployed application here:  [https://resume-screening-ai.streamlit.app](https://resume-screening-ai-project-trapti.streamlit.app/)
 
 ---
 
