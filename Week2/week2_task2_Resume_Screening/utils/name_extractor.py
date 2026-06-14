@@ -1,7 +1,4 @@
 import re
-import spacy
-
-nlp=spacy.load("en_core_web_sm")
 JOB_TITLES = {
     "travel agent",
     "personal trainer",
@@ -41,15 +38,4 @@ def extract_name(text):
             if re.match(r'^[A-Za-z\s]+$', line):
                 return line.title()
    
-    # ---------- SPACY FALLBACK ----------
-    doc = nlp(text[:2000])
-
-    for ent in doc.ents:
-
-        if ent.label_ == "PERSON":
-
-            name = ent.text.strip()
-
-            if 2 <= len(name.split()) <= 4:
-                return name.title()
     return "Unknown"
