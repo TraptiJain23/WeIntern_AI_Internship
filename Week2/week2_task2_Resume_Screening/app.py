@@ -1,3 +1,4 @@
+# Import libraries and files
 import streamlit as st
 import pandas as pd
 from utils.pdf_parser import extract_text_from_pdf
@@ -11,14 +12,13 @@ from utils.matcher import (
     calculate_similarity
 )
 
-
+#UI Interface
 st.title("Resume Screening AI")
 uploaded_files = st.file_uploader(
     "Upload Resume(s)",
     type=["pdf"],
     accept_multiple_files=True
 )
-
 
 st.subheader("Job Description")
 job_description = st.text_area(
@@ -43,18 +43,18 @@ if uploaded_files and job_description:
         st.write("### Candidate Name")
         st.success(name)
 
-        
-
+        #text preprocessing
         processed_text = preprocess_text(text)
         jd_processed = preprocess_text(job_description)
 
+        #Extracting Skills
         resume_skills = extract_skills(processed_text)
         jd_skills = extract_skills(jd_processed)
 
         st.write("### Resume Skills")
         st.success(", ".join(resume_skills) if resume_skills else "No skills found")
 
-        st.write("### JD Skills")
+        st.write("### JD Skills")  #JD-->Job Description
         st.info(", ".join(jd_skills) if jd_skills else "No skills found")
         
 
@@ -62,34 +62,35 @@ if uploaded_files and job_description:
             jd_skills,
             resume_skills
         )
-
         st.write("### Matched Skills")
         st.success(
             ", ".join(matched_skills)
             if matched_skills
             else "No matching skills"
         )
-
+        #Skill match Score
         st.write("### Skill Match Score")
         st.info(f"{skill_score}%")
 
+        #Similarity Score
         similarity_score = calculate_similarity(
             jd_processed,
             processed_text
         )
-
         st.write("### Similarity Score")
         st.info(f"{similarity_score}%")
 
+
+        #Final Score        
         final_score = round(
             (0.3 * skill_score) +
             (0.7 * similarity_score),
             2
         )
-        #Final Score
         st.write("### Final Match Score")
         st.success(f"{final_score}%")
 
+        
         results.append({
             "Resume": file.name,
             "Name": name,
@@ -106,31 +107,28 @@ if uploaded_files and job_description:
             key=f"resume_{idx}"
         )
 
+        
         #Extracting Education section
-
         education = extract_education(text)
         st.write("### Education")
         st.info(education)
 
+        
         #Extracting Experience section
-
         experience = extract_experience(text)
         st.write("### Experience")
         st.info(experience)
 
-
+        #Candidate summary
         st.subheader("📋 Candidate Summary")
-
         st.write(f"Name: {name}")
 
         st.write(
             f"Top Skills: {', '.join(resume_skills[:5])}"
         )
-
         st.write(
             f"Matched Skills: {', '.join(matched_skills)}"
         )
-        
         st.write(
             f"Match Score: {final_score}%"
         )
@@ -151,13 +149,14 @@ if uploaded_files and job_description:
             len(ranking_df) + 1
         )
 
-        st.subheader("🏆 Candidate Rankings")
+        st.subheader("Candidate Rankings")
 
         st.dataframe(ranking_df)
         csv = ranking_df.to_csv(
             index=False
         ).encode("utf-8")
 
+        #Download button
         st.download_button(
             "📥 Download Ranking Report",
             data=csv,
