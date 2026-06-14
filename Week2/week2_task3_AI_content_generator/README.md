@@ -1,10 +1,17 @@
-# Task 2: 🤖 AI Content Generator
+# Task 3: 🤖 AI Content Generator
 
 ##  Overview
 
 AI Content Generator is a Streamlit based web application powered by Google's Gemini AI. It helps users generate different types of content such as blog posts, social media captions, and text summaries based on a given topic and tone.
 
 The application provides a simple and interactive interface for creating high-quality content instantly.
+
+---
+##  Live Demo
+
+The application is deployed on Streamlit Community Cloud and can be accessed using the link below:
+
+🔗 https://ai-content-generator-trapti.streamlit.app/
 
 ---
 ## Features
