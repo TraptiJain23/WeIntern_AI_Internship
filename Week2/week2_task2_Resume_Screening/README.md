@@ -64,6 +64,7 @@ week2_task2_Resume-Screening/
 ├── app.py
 ├── requirements.txt
 ├── README.md
+├── SampleResumes/
 ├── Demo/
 └── utils/
     ├── pdf_parser.py
