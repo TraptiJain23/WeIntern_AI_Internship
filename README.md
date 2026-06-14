@@ -56,8 +56,71 @@ Python data libraries.
 ---
 
 ### Week 2
+The assignments were focused on Artificial Intelligence, Natural Language Processing, and Machine Learning applications using Python and Streamlit.
 
-*To be added*
+---
+
+## Task 1: AI Career Guidance Chatbot
+
+
+Developed an AI-powered Career Guidance Chatbot that assists students and job seekers in exploring suitable career paths based on their interests and queries. The chatbot uses Natural Language Processing (NLP) techniques to understand user input and provide relevant career-related guidance, learning recommendations, and career suggestions through an interactive conversational interface.
+
+Live link: https://ai-career-guidance-chatbot-trapti.streamlit.app/
+
+### Key Features
+- NLP-based query processing
+- Career guidance and recommendations
+- Interactive chatbot interface
+- Streamlit-based web application
+
+---
+
+## Task 2: Resume Screening AI
+
+Built an AI-powered Resume Screening System that automatically analyzes resumes against a given Job Description (JD). The application extracts candidate information, identifies relevant skills, computes similarity scores using TF-IDF and Cosine Similarity, and ranks candidates based on their suitability for the role.
+
+Live Link: https://resume-screening-ai-project-trapti.streamlit.app/
+
+### Key Features
+- Multiple PDF resume upload
+- Candidate name extraction
+- Education and experience extraction
+- Skill extraction and matching
+- NLP preprocessing
+- TF-IDF Vectorization
+- Cosine Similarity Matching
+- Candidate ranking system
+- CSV report generation
+
+---
+
+## Task 3: AI Content Generation Tool
+
+Developed an AI-based Content Generation Tool that generates high-quality content from user prompts. The application enables users to create structured content quickly and efficiently through an interactive interface powered by NLP techniques.
+
+Live Link: https://ai-content-generator-trapti.streamlit.app/
+
+### Key Features
+- Prompt-based content generation
+- User-friendly interface
+- AI-assisted content creation
+- Streamlit-based deployment
+
+---
+
+## Technologies Used
+
+- Python
+- Streamlit
+- NLP (Natural Language Processing)
+- NLTK
+- Scikit-learn
+- PDFPlumber
+- Pandas
+- TF-IDF Vectorization
+- Cosine Similarity
+
+
 
 ---
 
