@@ -23,11 +23,11 @@ SKILLS = [
     "canva",
     "adobe photoshop",
     "adobe illustrator",
-    "MongoDB",
-    "React.js",
-    "Node.js",
-    "Express.js",
-    "MERN stack"  
+    "mongodb",
+    "react.js",
+    "node.js",
+    "express.js",
+    "mern stack"  
 ]
 
 def extract_skills(text):
