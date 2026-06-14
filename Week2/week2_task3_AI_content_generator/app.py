@@ -195,7 +195,7 @@ if st.session_state.generated_content:
         st.metric("📝 Words", word_count)
     
     with col2:
-        st.metric("🔤 Characters", char_count
+        st.metric("🔤 Characters", char_count)
 
                   
     # copy button
