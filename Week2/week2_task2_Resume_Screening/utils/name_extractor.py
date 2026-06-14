@@ -9,8 +9,8 @@ JOB_TITLES = {
     "software engineer",
     "data analyst",
     "teacher",
-    "Mechanical Engineer",
-    "Data Scientist"
+    "mechanical engineer",
+    "data scientist"
 }
 
 def extract_name(text):
