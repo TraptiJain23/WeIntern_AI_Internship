@@ -4,7 +4,7 @@ import google.generativeai as genai
 from dotenv import load_dotenv
 import streamlit.components.v1 as components
 import os
-import json
+import html
 
 #Page Configuration
 st.set_page_config(
@@ -145,9 +145,8 @@ regenerate_btn = st.button("🔄 Regenerate")
 if st.session_state.generated_content:
 
     st.subheader("Generated Content")
-
     st.text_area(
-        "Generated Content",
+        "",
         st.session_state.generated_content,
         height=350
     )
@@ -168,20 +167,14 @@ if st.session_state.generated_content:
     with col2:
         st.metric("Characters", char_count)
     # copy button
-
-    copy_text = json.dumps(st.session_state.generated_content)
+    copy_text = html.escape(st.session_state.generated_content)
     
     components.html(
         f"""
+        <textarea id="copyText" style="display:none;">{copy_text}</textarea>
+    
         <button
             id="copyBtn"
-            onclick="
-                navigator.clipboard.writeText({copy_text});
-                document.getElementById('copyBtn').innerText='✅ Copied!';
-                setTimeout(() => {{
-                    document.getElementById('copyBtn').innerText='📋 Copy Content';
-                }}, 2000);
-            "
             style="
                 background-color:#4CAF50;
                 color:white;
@@ -190,13 +183,26 @@ if st.session_state.generated_content:
                 border-radius:8px;
                 cursor:pointer;
                 font-size:16px;
-            ">
+            "
+            onclick="
+                const text = document.getElementById('copyText').value;
+                navigator.clipboard.writeText(text);
+    
+                const btn = document.getElementById('copyBtn');
+                btn.innerText = '✅ Copied!';
+    
+                setTimeout(function(){{
+                    btn.innerText = '📋 Copy Content';
+                }}, 2000);
+            "
+        >
             📋 Copy Content
         </button>
         """,
         height=70,
     )
-  
+
+
 if regenerate_btn:
     if topic.strip():
         with st.spinner("Regenerating content..."):
