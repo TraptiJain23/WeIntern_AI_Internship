@@ -12,6 +12,36 @@ st.set_page_config(
     page_icon="🤖",
     layout="wide"
 )
+st.markdown("""
+<style>
+
+.main-header {
+    text-align: center;
+    color: #4CAF50;
+    font-size: 42px;
+    font-weight: bold;
+}
+
+.sub-text {
+    text-align: center;
+    color: #B0B0B0;
+    font-size: 18px;
+}
+
+.stButton > button {
+    background-color: #4CAF50;
+    color: white;
+    border-radius: 10px;
+    border: none;
+}
+
+.stButton > button:hover {
+    background-color: #45a049;
+}
+
+</style>
+""", unsafe_allow_html=True)
+
 
 #Load API Key
 load_dotenv()
@@ -160,12 +190,14 @@ if st.session_state.generated_content:
     )
     # metrics
     col1, col2 = st.columns(2)
-
+    
     with col1:
-        st.metric("Words", word_count)
-
+        st.metric("📝 Words", word_count)
+    
     with col2:
-        st.metric("Characters", char_count)
+        st.metric("🔤 Characters", char_count
+
+                  
     # copy button
     copy_text = html.escape(st.session_state.generated_content)
     
