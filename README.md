@@ -125,10 +125,132 @@ Live Link: https://ai-content-generator-trapti.streamlit.app/
 ---
 
 ### Week 3
+# 🌿Minor Project | AI Plant Disease Classifier
 
-*To be added*
+The project is an AI-powered web application that identifies plant leaf diseases using Deep Learning. Users can upload an image or capture one using their device camera, and the system predicts the disease, displays the confidence score, and provides treatment recommendations to assist in early disease detection.
+Live demo:
+https://huggingface.co/spaces/jaintapti/AgriShield-AI-Plant-Disease-Classifier
 
 ---
+
+## 🎯 Project Objectives
+
+- Develop an end-to-end AI-powered web application.
+- Apply Deep Learning for image classification.
+- Build a responsive Flask-based web interface.
+- Integrate image upload and live camera capture.
+- Deploy the complete application on Hugging Face Spaces.
+
+---
+
+##  Features
+
+- 🌱 Plant leaf disease detection
+- 📷 Camera capture support
+- 🖼 Image upload functionality
+- 🤖 AI-based prediction using TensorFlow
+- 📊 Prediction confidence score
+- 💊 Disease remedy recommendations
+- 📱 Responsive user interface
+- ☁️ Cloud deployment using Hugging Face Spaces
+
+---
+
+## 🧠 AI Model
+
+- **Model Type:** CNN Image Classification
+- **Architecture:** MobileNetV2 (Transfer Learning)
+- **Framework:** TensorFlow / Keras
+- **Input Size:** 224 × 224 RGB Images
+- **Output Classes:** 38 Plant Disease Categories
+
+---
+
+## 🌾 Dataset
+
+**Dataset Used:** PlantVillage Dataset (Kaggle)
+
+### Dataset Information
+
+- Total Classes: **38**
+- Multiple crop species
+- Healthy and diseased leaf images
+- RGB images
+- Image size resized to **224 × 224**
+
+Supported crops include:
+
+- Apple
+- Blueberry
+- Cherry
+- Corn (Maize)
+- Grape
+- Orange
+- Peach
+- Pepper
+- Potato
+- Raspberry
+- Soybean
+- Squash
+- Strawberry
+- Tomato
+
+---
+
+## 🛠 Tech Stack
+
+### Frontend
+
+- HTML5
+- CSS3
+- JavaScript
+
+### Backend
+
+- Flask
+- Python
+
+### AI / ML
+
+- TensorFlow
+- Keras
+- OpenCV
+- NumPy
+- Pillow
+
+### Deployment
+
+- Hugging Face Spaces (Docker)
+
+---
+
+
+## 📚 Learning Outcomes
+
+During this project, I learned:
+
+- Building AI-powered Flask applications
+- Image preprocessing techniques
+- Transfer Learning using MobileNetV2
+- TensorFlow model integration
+- REST API handling in Flask
+- Camera integration using JavaScript
+- Docker-based deployment
+- Deploying AI applications on Hugging Face Spaces
+
+---
+
+## 🔮 Future Improvements
+
+- Support more crop species
+- Multi-language interface
+- Disease severity estimation
+- Offline prediction support
+- Weather-based recommendations
+- Fertilizer recommendation system
+- User authentication
+- Prediction history dashboard
+
 
 ### Week 4
 
@@ -143,7 +265,7 @@ WeIntern_AI_Internship/
 │
 ├── Week-1/
 ├── Week-2/
-├── Week-3/
+├── plant-disease-detection-project/
 ├── Week-4/
 └── README.md
 ```
@@ -161,6 +283,9 @@ Throughout this internship, I am developing skills in:
 * Problem-solving using data
 * Git and GitHub workflow
 * Project documentation
+* Flask
+* AI tools
+* CNN model training
 
 ---
 
